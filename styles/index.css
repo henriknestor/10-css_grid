@@ -13,8 +13,7 @@
     height: 83.5vh;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(11 1fr);
-    /* It doesn't seem to matter what I write in the paranthesis? */
+    grid-template-rows: repeat(10, 1fr);
     grid-gap: var(--air);
     padding: var(--air);
 }
