@@ -1,11 +1,21 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+
+  :root {
+    --air: 1.4vw;
+  }
+
+
 .grid__container {
     width:100%;
-    height: 80vh;
+    height: 83.5vh;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 2.6%;
-    padding: 2.6%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: var(--air);
+    padding: var(--air);
 }
 
 .grid__element {
@@ -70,7 +80,7 @@
 .title {
     background-color: #9BC1BC;
     width: 100%;
-    height: 20vh;
+    height: 16.5vh;
     display: flex;
     align-items: center;
 }
@@ -79,11 +89,11 @@ h1 {
     color: #000;
     font-family: 'Roboto', sans-serif;
     /* Helvetica Neue replaced by Roboto; don't know how to use copyright typefaces properly */
-    font-size: 6vw;
+    font-size: 4.3vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
     margin: 0;
-    padding-left: 2.6%;
+    padding-left: var(--air);
 }
